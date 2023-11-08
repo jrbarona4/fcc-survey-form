@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    </head>
+    <main>
+      <body>
+        
+        <header><h1 id ="title">Survey Form</h1>
+        <p id="description">Please answer this form</p>
+        </header>
+      <div class="frame">
+        <form id="survey-form">
+        <div class="name"><label id ="name-label">Name: <input id="name" type="text" required placeholder="Name"/ >
+        </label>
+        </div>
+        <div class="email"><label id ="email-label">Email: <input id="email" type="email" placeholder="Email" required/ ></label>
+       </div>
+        <div class="number"><label id ="number-label"> Number: <input id="number" type="number" pattern="[0-9]" placeholder="Number" min="18" max="60"/></div> 
+        <div class="radiohead">
+        Favorite Radiohead song?:
+        <select id="dropdown">
+          <option>Separator</option>
+          <option>Creep</option>
+          <option>The Bends</option>
+          </select>
+          </div>
+<fieldset>
+  <legend>How do you prefer your fried chicken?</legend>
+  <div class="original"><label for="original">
+         Original <input name="flavor" id="original" type ="radio" value="1" checked/>
+          </label>
+          </div>
+  <div class="spicy"><label for="spicy">        
+         Spicy <input name="flavor" id="spicy" type ="radio" value="2" />
+</div>
+</fieldset>
+<fieldset>
+  <legend>Favorite pie flavor</legend>
+<label for ="pumpkin"> Pumpkin Pie
+<input id="pumpkin" type="checkbox" value="1"/></label>
+<br>
+<label for ="apple"> Apple Pie
+<input id="apple" type="checkbox" value="2"/></label>
+<br>
+<label for ="keylime"> Key Lime Pie
+<input id="keylime" type="checkbox" value="3"/></label>
+</fieldset>
+<br>
+<textarea id="comments" name="comments" rows="3" cols="30" placeholder="Write a comment here"></textarea>
+        <div class="submit">
+        <input id="submit" type="submit" value="Submit" /></div>
+        </form>
+
+
+        </div>
+        </body>
+  </html>
